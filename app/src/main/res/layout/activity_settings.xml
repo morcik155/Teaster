@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <ImageView
+        android:id="@+id/bg_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bg_blue" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="69dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/grops_icon" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="76dp"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021"
+        app:srcCompat="@drawable/settings_icon" />
+
+    <Button
+        android:id="@+id/set_b3"
+        android:layout_width="75dp"
+        android:layout_height="72dp"
+        android:background="#00FFFFFF"
+        android:text="⠀⠀⠀⠀⠀"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <Button
+        android:id="@+id/grop_b3"
+        android:layout_width="74dp"
+        android:layout_height="87dp"
+        android:background="#00FFFFFF"
+        android:text="⠀⠀⠀⠀⠀"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="128dp"
+        android:layout_height="71dp"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="theme"
+        android:textColor="@color/blue"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bg_settings"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="350dp"
+        android:layout_height="480dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9">
+
+        <RadioButton
+            android:id="@+id/is_blue"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:checked="true"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="blue"
+            android:textColor="@color/blue"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/is_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="yellow"
+            android:textColor="@color/blue"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/is_green"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="green"
+            android:textColor="@color/blue"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/is_red"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="red"
+            android:textColor="@color/blue"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/is_orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="orange"
+            android:textColor="@color/blue"
+            android:textSize="34sp" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
